@@ -33,5 +33,10 @@ public class DrawACrate
         line4.draw();
         Line line5 = new Line(150, 10, 150, 50);
         line5.draw();
+        
+        // Top Secret message
+        
+        Text message = new Text(20, 30, "TOP SECRET");
+        message.draw();
     }
 }
