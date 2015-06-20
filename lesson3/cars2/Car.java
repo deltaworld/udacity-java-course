@@ -25,5 +25,14 @@ public class Car
     }
 
     // More methods ...
+    public double getMilesDriven()
+    {
+            return milesDriven;
+    }
+    
+    public double getGasInTank()
+    {
+            return gasInTank;
+    }
 
 }
