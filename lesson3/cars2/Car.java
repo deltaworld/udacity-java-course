@@ -27,7 +27,9 @@ public class Car
     // More methods ...
     public double getMilesDriven()
     {
-            return milesDriven;
+        double fuelEfficiency = 50;
+        gasInTank = gasInTank - milesDriven / fuelEfficiency;    
+        return milesDriven;
     }
     
     public double getGasInTank()
