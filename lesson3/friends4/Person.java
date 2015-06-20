@@ -3,6 +3,8 @@ public class Person
 {
     private String name;
     private String friends;
+    private int x;
+    private int y;
 
     // TODO Part 1: Create two additional instance int variables called x and y
     // to store the values of xCoord and yCoord variables that are passed
@@ -24,6 +26,8 @@ public class Person
         //
         // For example (here's a freebie for you!):
         // x = xCoord;
+        x = xCoord;
+        y = yCoord;
     }
 
    // This function return the friends of this Person object
@@ -48,9 +52,11 @@ public class Person
         // To draw a small circle, 1st, create a SmallCircle object. For example:
         // SmallCircle circle = new SmallCircle(x-position, y-position);
         //
+        SmallCircle circle = new SmallCircle(x, y);
         // and the draw the circle by calling the fill() function. For example:
         // circle.fill();
         //
+        circle.fill();
         // 2nd, draw a line from the small circle above to
         // the friend object that is passed into the addFriend function.
         //
@@ -58,6 +64,8 @@ public class Person
         // Line someLine = new Line (startingXPosition, startingYPosition, endingXPosition, endingYPosition);
         // line.draw();
         //
+        Line line = new Line (x, y, friend.x, friend.y);
+        line.draw();
         // HINTS:
         // a) startXPosition and startYPosition are the x and y position of this person object
         // b) endingXPOsition and endingYPosition are the x and y position of the friend objec
