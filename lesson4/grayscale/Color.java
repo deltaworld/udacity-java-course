@@ -21,10 +21,10 @@ public class Color
         // red - 0.2126
         // green - 0.7152
         // blue - 0.0722
-        this.red = (int)(this.red * 0.2126);
-        this.green = (int)(this.green * 0.7152);
-        this.blue = (int)(this.blue * 0.0722);        
-
+        int gray = (int)(this.red * 0.2126 + this.green * 0.7152 + this.blue * 0.0722);
+        this.red = gray;
+        this.blue = gray;
+        this.green = gray;
     }
 
     /**
