@@ -14,7 +14,7 @@ public class WhatDayWillItBe
         // Compute the weekday: 0 - Sunday, 1 - Monday, ..., 6 - Saturday
         Day startDay = new Day(1900, 1, 1);
         
-        int weekday = birthday.daysFrom(startDay) % 7 - 1;
+        int weekday = birthday.daysFrom(startDay) % 7 + 1;
         
 //         String weekday;
 //         switch (dayOfWeek) {
