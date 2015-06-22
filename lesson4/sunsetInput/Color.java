@@ -10,12 +10,13 @@ public class Color
 
     /**
      * Makes this color redder.
+     * @param addedRed adds red to the Red channel.
      */
     public void redden(int addedRed) // TODO: Add a parameter
     {
         
         final int MAX_RED = 255;
-        red = Math.min(MAX_RED, red + addedRed);
+        red = Math.max(0, Math.min(MAX_RED, red + addedRed));
     }
 
     /**
