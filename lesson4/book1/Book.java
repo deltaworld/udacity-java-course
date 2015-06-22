@@ -14,6 +14,16 @@ public class Book
     }
 
     /**
+     * Gets the first sentence of this book.
+     * @return the first sentence (including the period) of this book.
+     */
+    public String getFirstSentence()
+    {
+        int periodIndex = bookText.indexOf(".");
+        return bookText.substring(0, periodIndex+1);
+    }
+    
+    /**
      * Calculates the number of characters (as in letters and
      * symbols, not people) in the book.
      * @return the number of letters and symbols in the book.
@@ -25,7 +35,20 @@ public class Book
         // Which string method do you want to use?
         return this.bookText.length();
     }
-
+    
+    /**
+       Finds where the string "Mad Hatter" occurs for the first time in the book.
+       @return the location of the first occurrence of the string
+    */
+ 
+    public int firstOccurrenceOfMadHatter()
+    {
+        // TODO: Complete this method
+        //
+        // Check the fact sheet. There is a String function
+        // that can do this for you.
+        return this.bookText.indexOf("Mad Hatter");
+    }
     /**
      * A method to help read the book out of the file.
      * You don't have to read this unless you want to.
