@@ -13,8 +13,10 @@ public class Color
     {
 
         // TODO
+        final int REDDEN = 25;
+        final int MAX_RED = 255;
         
-        red = Math.min(255, red + 25);
+        red = Math.min(MAX_RED, red + REDDEN);
         
 
 
