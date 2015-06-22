@@ -23,6 +23,7 @@ public class Book
         // TODO: Complete this method
         // You will want to use the fact sheet linked in the instructor comments.
         // Which string method do you want to use?
+        return this.bookText.length();
     }
 
     /**

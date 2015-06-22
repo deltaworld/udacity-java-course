@@ -11,12 +11,14 @@ public class MicroKitchenTable
         int cayCookiesPerDay = 1;
         double cayCerealPerDay = 0;
         String cayName = "Cay";
+        
+        String rowPattern = "%8d|%8.2f|%s";
         System.out.println();
         System.out.println("cookies | cereal | name");
         System.out.println("------------------------");
-        System.out.printf("%8d|%8.2f|%s", saraCookiesPerDay, saraCerealPerDay, saraName);
+        System.out.printf(rowPattern, saraCookiesPerDay, saraCerealPerDay, saraName);
         System.out.println();
-        System.out.printf("%8d|%8.2f|%s", cayCookiesPerDay, cayCerealPerDay, cayName);
+        System.out.printf(rowPattern, cayCookiesPerDay, cayCerealPerDay, cayName);
         System.out.println();
     }
 }
