@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ redden()
-comment0.text=\n\ Makes\ this\ color\ redder\n
+comment0.text=\n\ Makes\ the\ color\ redder\ by\ 25,\ but\ not\ redder\ than\ 255.\n
 comment1.params=red\ green\ blue
 comment1.target=Color(int,\ int,\ int)
 comment1.text=\n\ Constructs\ a\ new\ Color\ object.\n\ @param\ red\ the\ red\ value\ of\ the\ color\ (between\ 0\ and\ 255)\n\ @param\ green\ the\ green\ value\ of\ the\ color\ (between\ 0\ and\ 255)\n\ @param\ blue\ the\ blue\ value\ of\ the\ color\ (between\ 0\ and\ 255)\n

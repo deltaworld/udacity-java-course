@@ -13,6 +13,12 @@ public class Color
     {
 
         // TODO
+        this.red += 25;
+        if (this.red >= 255) 
+        {
+            this.red = 255;
+        }
+
 
     }
 
