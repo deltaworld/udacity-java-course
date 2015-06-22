@@ -14,6 +14,9 @@ public class Color
     {
         // TODO: Change the values for red, green, and blue
         // to one of the following: 0, 51, 102, 153, 204, 255
+        this.red = this.red * 6 / 256 * 51;
+        this.green = this.green * 6 / 256 * 51;
+        this.blue = this.blue * 6 / 256 * 51;
     }
 
     /**
