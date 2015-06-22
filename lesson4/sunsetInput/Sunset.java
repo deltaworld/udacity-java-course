@@ -1,3 +1,4 @@
+import java.util.Scanner;
 // BlueJ project: lesson4/sunsetInput
 // Video: Color Your Own Sunset Effect
 
@@ -12,12 +13,14 @@ public class Sunset
 
         System.out.print("Added redness: ");
         // TODO: Read added redness from scanner
+        Scanner in = new Scanner(System.in);
+        int redness = in.nextInt();
 
         pic.draw();
         for (int i = 0; i < pic.pixels(); i++)
         {
             Color c = pic.getColorAt(i);
-            c.redden(); // TODO: Pass added redness to method
+            c.redden(redness); // TODO: Pass added redness to method
             pic.setColorAt(i, c);
         }
     }

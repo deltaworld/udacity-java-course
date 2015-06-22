@@ -1,3 +1,4 @@
+
 // BlueJ project: lesson4/sunsetInput
 // Video: Color Your Own Sunset Effect
 
@@ -10,11 +11,11 @@ public class Color
     /**
      * Makes this color redder.
      */
-    public void redden() // TODO: Add a parameter
+    public void redden(int addedRed) // TODO: Add a parameter
     {
-        final int ADDED_RED = 25; // TODO: Remove
+        
         final int MAX_RED = 255;
-        red = Math.min(MAX_RED, red + ADDED_RED);
+        red = Math.min(MAX_RED, red + addedRed);
     }
 
     /**
