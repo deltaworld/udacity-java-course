@@ -13,11 +13,9 @@ public class Color
     {
 
         // TODO
-        this.red += 25;
-        if (this.red >= 255) 
-        {
-            this.red = 255;
-        }
+        
+        red = Math.min(255, red + 25);
+        
 
 
     }
