@@ -6,7 +6,7 @@ public class EqualStrings
         String second = "city";
         String firstAndSecond = first + second;
         String third = "Udacity";
-        if (firstAndSecond == third)
+        if (firstAndSecond.equals(third))
         {
             System.out.println("They are the same");
         }
