@@ -7,9 +7,9 @@ comment1.text=\n\ Gets\ the\ first\ sentence\ of\ this\ book.\n\ @return\ the\ f
 comment2.params=
 comment2.target=java.lang.String\ getSecondSentence()
 comment2.text=\n\ Gets\ the\ second\ sentence\ of\ this\ book.\n\ @return\ the\ second\ sentence\ (including\ the\ period)\ of\ the\ book.\n
-comment3.params=
-comment3.target=int\ occurrencesOfAlice()
-comment3.text=\n\ Counts\ how\ many\ times\ "Alice"\ occurs\ in\ the\ book.\n\ @return\ the\ number\ of\ occurrences\n
+comment3.params=word
+comment3.target=int\ occurrencesOf(java.lang.String)
+comment3.text=\n\ Counts\ how\ many\ times\ a\ given\ word\ occurs\ in\ this\ book.\n\ @param\ word\ a\ word\ of\ length\ >\=\ 1\n\ @return\ the\ number\ of\ occurrences\n
 comment4.params=
 comment4.target=int\ getNumCharacters()
 comment4.text=\n\ Calculates\ the\ number\ of\ characters\ (as\ in\ letters\ and\n\ symbols,\ not\ people)\ in\ the\ book.\n\ @return\ the\ number\ of\ letters\ and\ symbols\ in\ the\ book.\n

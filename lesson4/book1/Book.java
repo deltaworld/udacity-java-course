@@ -10,6 +10,7 @@ public class Book
     private String bookText;
     private int firstPeriod;
 
+
     public Book(String fileName)
     {
         readBook(fileName);
@@ -36,19 +37,19 @@ public class Book
     }
     
     /**
-     * Counts how many times "Alice" occurs in the book.
+     * Counts how many times a given word occurs in this book.
+     * @param word a word of length >= 1
      * @return the number of occurrences
      */
-    public int occurrencesOfAlice()
+    public int occurrencesOf(String word)
     {
         // TODO: Find the number of times the word "Alice" occurs in this book
-        String alice = "Alice";
-        int aliceLength = alice.length();
+        int wordLength = word.length();
         int numChars = this.getNumCharacters();
-        String replacedBook = this.bookText.replace(alice, "");
+        String replacedBook = this.bookText.replace(word, "");
         int numCharsReplacedBook = replacedBook.length();
         
-        return (numChars - numCharsReplacedBook) / aliceLength;
+        return (numChars - numCharsReplacedBook) / wordLength;
         
         //return StringUtils.countMatches(this.bookText, alice);
         

@@ -43,6 +43,7 @@ public class BookTester
 "close by her.");     
 
         System.out.println();
-        System.out.println(alice.occurrencesOfAlice());
+        System.out.print("Number of Words: " );
+        System.out.println(alice.occurrencesOf("Alice"));
     }
 }
