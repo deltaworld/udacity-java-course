@@ -3,6 +3,7 @@
 
 import java.util.Scanner;
 import java.io.File;
+import org.apache.commons.lang3.StringUtils;
 
 public class Book
 {
@@ -34,6 +35,17 @@ public class Book
         return this.bookText.substring(this.firstPeriod+2,secondPeriod+1);
     }
     
+    /**
+     * Counts how many times "Alice" occurs in the book.
+     * @return the number of occurrences
+     */
+    public int occurrencesOfAlice()
+    {
+        // TODO: Find the number of times the word "Alice" occurs in this book
+        String alice = "Alice";
+        return StringUtils.countMatches(this.bookText, alice);
+        
+    }
     /**
      * Calculates the number of characters (as in letters and
      * symbols, not people) in the book.

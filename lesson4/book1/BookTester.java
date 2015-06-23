@@ -40,6 +40,9 @@ public class BookTester
 "hot day made her feel very sleepy and stupid), whether the pleasure " +
 "of making a daisy-chain would be worth the trouble of getting up and " +
 "picking the daisies, when suddenly a White Rabbit with pink eyes ran " +
-"close by her.");        
+"close by her.");     
+
+        System.out.println();
+        System.out.println(alice.occurrencesOfAlice());
     }
 }
