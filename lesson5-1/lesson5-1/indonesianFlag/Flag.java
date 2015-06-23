@@ -1,3 +1,6 @@
+// Bluej project: lesson5/indonesianFlag
+
+// Please use the >= operator
 public class Flag
 {
     private Picture pic;
@@ -6,8 +9,11 @@ public class Flag
 
     public Color getColorAt(int x, int y)
     {
+        // TODO: add correct conditions between the parentheses after the if statement
+        // to determine which color needs to be used at any (x, y) coordinate
+        // TODO: set the variable c to that color
         Color c;
-        if (y >= height / 2)
+        if (y >= height/2)
         {
             c = Color.WHITE;
         }
@@ -16,8 +22,10 @@ public class Flag
             c = Color.RED;
         }
         return c;
-    }
-
+     }
+    
+    // This constructor creates a new flag object and draws it.
+    // You don't need to change this.
     public Flag(int width, int height)
     {
         this.width = width;
