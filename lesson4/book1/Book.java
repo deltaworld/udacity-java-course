@@ -43,7 +43,14 @@ public class Book
     {
         // TODO: Find the number of times the word "Alice" occurs in this book
         String alice = "Alice";
-        return StringUtils.countMatches(this.bookText, alice);
+        int aliceLength = alice.length();
+        int numChars = this.getNumCharacters();
+        String replacedBook = this.bookText.replace(alice, "");
+        int numCharsReplacedBook = replacedBook.length();
+        
+        return (numChars - numCharsReplacedBook) / aliceLength;
+        
+        //return StringUtils.countMatches(this.bookText, alice);
         
     }
     /**
