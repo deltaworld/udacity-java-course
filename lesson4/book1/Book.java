@@ -7,6 +7,7 @@ import java.io.File;
 public class Book
 {
     private String bookText;
+    private int firstPeriod;
 
     public Book(String fileName)
     {
@@ -19,8 +20,18 @@ public class Book
      */
     public String getFirstSentence()
     {
-        int periodIndex = bookText.indexOf(".");
-        return bookText.substring(0, periodIndex+1);
+        this.firstPeriod = bookText.indexOf(".");
+        return bookText.substring(0, this.firstPeriod+1);
+    }
+    
+    /**
+     * Gets the second sentence of this book.
+     * @return the second sentence (including the period) of the book.
+     */
+    public String getSecondSentence()
+    {
+        int secondPeriod = bookText.indexOf(".", this.firstPeriod+2);
+        return this.bookText.substring(this.firstPeriod+2,secondPeriod+1);
     }
     
     /**
