@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=str
+comment0.target=int\ stringLength(java.lang.String)
+comment0.text=\n\ Gets\ the\ length\ of\ a\ string\n\ @param\ str\ the\ string\n\ @return\ the\ length\ of\ the\ string\n
+numComments=1
