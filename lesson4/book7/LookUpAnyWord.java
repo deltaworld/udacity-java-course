@@ -11,7 +11,8 @@ public class LookUpAnyWord
         // TODO: Create an scanner object to read the user input
         Scanner sc = new Scanner(System.in);
         // Read a word from the scanner and assign it to a String variable named word
-        String word = sc.next();
+        // Use nextLine if you want to search for a phrase instead of a word.
+        String word = sc.nextLine();
 
         // TODO: Create a book object that reads from aliceInWonderland.txt
         Book alice = new Book("aliceInWonderland.txt");
