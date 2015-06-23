@@ -1,9 +1,13 @@
+// Bluej project: lesson5/frenchFlag
+
 public class Flag
 {
     private Picture pic;
     private int width;
     private int height;
 
+    // This constructor creates and draws a flag object.
+    // You don't need to change this.
     public Flag(int width, int height)
     {
         this.width = width;
@@ -22,18 +26,23 @@ public class Flag
 
     public Color getColorAt(int x, int y)
     {
+        // TODO: add correct conditions between the parentheses to determine
+        // which color needs to be used at any (x, y) coordinate.  Remember, if
+        // the condition of the first if statement is true, the "else if" condition
+        // is never tested.
+        // TODO: set the variable c to that color
         Color c;
-        if (x < width / 3)
+        if (x < width/3)
         {
             c = Color.BLUE;
         }
-        else if (x < width * 2 / 3)
+        else if (x > width*2/3)
         {
-            c = Color.WHITE;
+            c = Color.RED;
         }
         else
         {
-            c = Color.RED;
+            c = Color.WHITE;
         }
         return c;
     }
