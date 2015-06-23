@@ -36,7 +36,7 @@ public class Flag
         {
             c = Color.BLUE;
         }
-        else if (x > width*2/3)
+        else if (x >= width*2/3)
         {
             c = Color.RED;
         }
