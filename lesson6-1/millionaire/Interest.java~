@@ -1,0 +1,10 @@
+public class Interest
+{
+    public static void main(String[] args)
+    {
+        double balance = 100;
+        double target = 1000000;
+        double rate = 0.01;
+        int year = 0;
+    }
+}
