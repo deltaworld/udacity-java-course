@@ -1,26 +1,24 @@
-// Bluej project: lesson5/sierraFlag
-
 public class Flag
 {
     private Picture pic;
     private int width;
     private int height;
-
-
+    
     public Color getColorAt(int x, int y)
     {
-        Color c = Color.WHITE;
-        //  
-         if (((x > (1 / 3.0) * width) && (x < (2 / 3.0) * width)) && ((y > (1 / 3.0) * height) && (y < (2 / 3.0) * height) ))
-         {
-             c = Color.BLUE;
-         }
-            
-            // TODO: Write the if/else statement to determine if a pixel should be blue or white.
-            return c;
+        Color c;
+        if (y >= height / 5 && y < height * 4 / 5)
+        {
+            c = Color.BLUE;
+        }
+        else
+        {
+            c = Color.YELLOW;
+        }
+        return c;
     }
-
-    public Flag(int width, int height)
+    
+        public Flag(int width, int height)
     {
         this.width = width;
         this.height = height;
@@ -35,4 +33,5 @@ public class Flag
             }
         }
     }
+
 }
