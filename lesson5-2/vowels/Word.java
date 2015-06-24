@@ -1,35 +1,40 @@
-// BlueJ project: lesson5/vowels
+// Bluej project: lesson5-2/vowels
 
 public class Word
 {
     private String letters;
-
-    public Word(String letters)
+    
+    public Word(String letters) 
     {
         this.letters = letters.toLowerCase();
     }
-
-    /**
-       Tests whether the ith letter is a vowel.
-       @param i the index of the letter to test
-       @return true if the ith letter is a vowel
-    */
+    
+    /** Checks whether the ith letter is a vowel.
+     *  @return true if the ith letter is a vowel, false otherwise.
+     */
     public boolean isVowel(int i)
     {
-        // TODO: Complete this method
+        // TODO your code here!
         // A little piece of code to get you started
-        return letters.substring(i, i + 1).equals("a");
+        return letters.substring(i, i+1).equals("a") 
+            || letters.substring(i, i+1).equals("e") 
+            || letters.substring(i, i+1).equals("i") 
+            || letters.substring(i, i+1).equals("o") 
+            || letters.substring(i, i+1).equals("u");
     }
-
-    /**
-       Tests whether the ith letter is a consonant.
-       @param i the index of the letter to test
-       @return true if the ith letter is a consonant
-    */
+    
+    /** Checks whether the ith letter is a consonant.
+     *  @return true if the ith letter is a consonant, false otherwise.
+     */
     public boolean isConsonant(int i)
     {
-        // TODO: Complete this method
-        return false;
+        if (!isVowel(i)) 
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
-
