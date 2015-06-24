@@ -16,11 +16,12 @@ public class Word
     {
         // TODO your code here!
         // A little piece of code to get you started
-        return letters.substring(i, i+1).equals("a") 
-            || letters.substring(i, i+1).equals("e") 
-            || letters.substring(i, i+1).equals("i") 
-            || letters.substring(i, i+1).equals("o") 
-            || letters.substring(i, i+1).equals("u");
+        String letter = letters.substring(i, i + 1);
+        return letter.equals("a") 
+            || letter.equals("e") 
+            || letter.equals("i") 
+            || letter.equals("o") 
+            || letter.equals("u");
     }
     
     /** Checks whether the ith letter is a consonant.
