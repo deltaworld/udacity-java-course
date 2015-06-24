@@ -3,6 +3,9 @@ public class WordTester
 {
     public static void main(String[] args)
     {
+        System.out.println(new Word("boo").getPluralForm());
+        System.out.println("Expected: booes");
+
         System.out.println(new Word("kiss").getPluralForm());
         System.out.println("Expected: kisses");
         System.out.println(new Word("phase").getPluralForm());
