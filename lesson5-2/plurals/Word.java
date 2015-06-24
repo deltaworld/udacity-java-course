@@ -25,23 +25,15 @@ public class Word
         //  isConsonant
         //  is
         // methods from below.
-        
-        int length = this.letters.length();
-        int last = length - 1;
+        int last = this.letters.length() - 1;
         String pluralWord = this.letters;;
         
         if     (this.is(last, "y")) // test to see if word ends in "y"
         {
-            if (this.isConsonant(last - 1))   // if ends in constant + y then remove "y" and add "ies"
-            {
-                pluralWord = this.letters.substring(0, last); //remove "y"
-                pluralWord += "ies";
-            }
-            else // if ends in vowel + y then just add "s"
-            {
-                pluralWord += "s";
-            }
-
+            pluralWord = 
+                (this.isConsonant(last - 1)) 
+                ? pluralWord.substring(0, last) + "ies" 
+                : pluralWord + "s"; 
         }
         else if (
                this.is(last, "o")
