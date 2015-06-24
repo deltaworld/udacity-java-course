@@ -1,4 +1,5 @@
-// Bluej project: plurals
+// Bluej project: lesson5-2/plurals
+
 public class Word
 {
     private String letters;
@@ -24,6 +25,26 @@ public class Word
         //  isConsonant
         //  is
         // methods from below.
+        
+        int length = this.letters.length();
+        String pluralWord = "";
+        
+        if     (this.is(length - 1,"y")) // test to see if word ends in "y"
+        {
+ 
+            if (this.isConsonant(length - 2))   // if ends in constant + y then remove "y" and add "ies"
+            {
+                pluralWord = this.letters.substring(0, length - 1); //remove "y"
+                pluralWord += "ies";
+            }
+            else // if ends in vowel + y then just add "s"
+            {
+                pluralWord = this.letters;
+                pluralWord += "s";
+            }
+            return pluralWord;
+        }
+    return "";
     }
 
     /**
