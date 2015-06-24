@@ -29,13 +29,6 @@ public class Word
      */
     public boolean isConsonant(int i)
     {
-        if (!isVowel(i)) 
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return !isVowel(i);
     }
 }
