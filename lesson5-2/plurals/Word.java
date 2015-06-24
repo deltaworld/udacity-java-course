@@ -51,6 +51,10 @@ public class Word
         {
             pluralWord += "es";
         }
+        else 
+        {
+            pluralWord += "s";
+        }
         return pluralWord;
     
     }
