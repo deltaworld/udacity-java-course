@@ -40,8 +40,13 @@ public class Word
             || this.is(last,"s")
             || ((this.is(last - 1,"s") || this.is(last - 1,"c")) && this.is(last,"h"))
             )// test for o || s || sh || ch ending
-             { pluralWord += "es"; }
-        else { pluralWord += "s"; }
+        {
+            pluralWord += "es";
+        }
+        else // just add "s" to all other words
+        {
+            pluralWord += "s";
+        }
         return pluralWord;
     }
 
