@@ -27,31 +27,31 @@ public class Word
         // methods from below.
         
         int length = this.letters.length();
+        int last = length - 1;
         String pluralWord = this.letters;;
         
-        if     (this.is(length - 1,"y")) // test to see if word ends in "y"
+        if     (this.is(last, "y")) // test to see if word ends in "y"
         {
-            if (this.isConsonant(length - 2))   // if ends in constant + y then remove "y" and add "ies"
+            if (this.isConsonant(last - 1))   // if ends in constant + y then remove "y" and add "ies"
             {
-                pluralWord = this.letters.substring(0, length - 1); //remove "y"
+                pluralWord = this.letters.substring(0, last); //remove "y"
                 pluralWord += "ies";
             }
             else // if ends in vowel + y then just add "s"
             {
-
                 pluralWord += "s";
             }
 
         }
         else if (
-               this.is(length - 1,"o")
-            || this.is(length - 1,"s")
-            || ((this.is(length - 2,"s") || this.is(length - 2,"c")) && this.is(length - 1,"h"))
+               this.is(last, "o")
+            || this.is(last,"s")
+            || ((this.is(last - 1,"s") || this.is(last - 1,"c")) && this.is(last,"h"))
             )// test for o || s || sh || ch ending
         {
             pluralWord += "es";
         }
-        else 
+        else // just add "s" to all other words
         {
             pluralWord += "s";
         }
