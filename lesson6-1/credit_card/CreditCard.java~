@@ -41,6 +41,5 @@ public class CreditCard
         }
 
         System.out.println(sum);
-        return sum;
     }
 }
